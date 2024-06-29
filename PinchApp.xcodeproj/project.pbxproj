@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		218434492C2F95EE004CACDC /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218434482C2F95EE004CACDC /* InfoPanelView.swift */; };
+		2184344B2C2F9966004CACDC /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184344A2C2F9966004CACDC /* ControlView.swift */; };
+		2184344D2C2FB4B2004CACDC /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184344C2C2FB4B2004CACDC /* PageModel.swift */; };
+		2184344F2C2FB516004CACDC /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184344E2C2FB516004CACDC /* PageData.swift */; };
 		21FD1E162C2F15DD00EC04F3 /* PinchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD1E152C2F15DD00EC04F3 /* PinchAppApp.swift */; };
 		21FD1E182C2F15DD00EC04F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FD1E172C2F15DD00EC04F3 /* ContentView.swift */; };
 		21FD1E1A2C2F15DE00EC04F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FD1E192C2F15DE00EC04F3 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		218434482C2F95EE004CACDC /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		2184344A2C2F9966004CACDC /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		2184344C2C2FB4B2004CACDC /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		2184344E2C2FB516004CACDC /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 		21FD1E122C2F15DD00EC04F3 /* PinchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD1E152C2F15DD00EC04F3 /* PinchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchAppApp.swift; sourceTree = "<group>"; };
 		21FD1E172C2F15DD00EC04F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		218434442C2F8E6D004CACDC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2184344E2C2FB516004CACDC /* PageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		218434452C2F8E70004CACDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2184344C2C2FB4B2004CACDC /* PageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		218434462C2F8E78004CACDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				218434482C2F95EE004CACDC /* InfoPanelView.swift */,
+				2184344A2C2F9966004CACDC /* ControlView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		218434472C2F8E7C004CACDC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				21FD1E172C2F15DD00EC04F3 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		21FD1E092C2F15DD00EC04F3 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +92,13 @@
 		21FD1E142C2F15DD00EC04F3 /* PinchApp */ = {
 			isa = PBXGroup;
 			children = (
-				21FD1E152C2F15DD00EC04F3 /* PinchAppApp.swift */,
-				21FD1E172C2F15DD00EC04F3 /* ContentView.swift */,
 				21FD1E192C2F15DE00EC04F3 /* Assets.xcassets */,
+				218434442C2F8E6D004CACDC /* Data */,
+				218434452C2F8E70004CACDC /* Model */,
+				21FD1E152C2F15DD00EC04F3 /* PinchAppApp.swift */,
 				21FD1E1B2C2F15DE00EC04F3 /* Preview Content */,
+				218434472C2F8E7C004CACDC /* Screens */,
+				218434462C2F8E78004CACDC /* View */,
 			);
 			path = PinchApp;
 			sourceTree = "<group>";
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2184344B2C2F9966004CACDC /* ControlView.swift in Sources */,
+				2184344D2C2FB4B2004CACDC /* PageModel.swift in Sources */,
 				21FD1E182C2F15DD00EC04F3 /* ContentView.swift in Sources */,
 				21FD1E162C2F15DD00EC04F3 /* PinchAppApp.swift in Sources */,
+				2184344F2C2FB516004CACDC /* PageData.swift in Sources */,
+				218434492C2F95EE004CACDC /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +326,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +354,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
